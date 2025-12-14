@@ -54,3 +54,8 @@ def train_and_evaluate():
 if __name__ == "__main__":
     train_and_evaluate()
 
+# tests/test_dummy.py
+
+def test_dummy():
+    # Simple test that always passes
+    assert 1 + 1 == 2
