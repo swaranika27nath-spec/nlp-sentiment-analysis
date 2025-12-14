@@ -60,6 +60,26 @@ def test_dummy():
     # Simple test that always passes
     assert 1 + 1 == 2
 
-    def test_dummy():
-    assert 1 + 1 == 2
+import unittest
+
+class TestDummy(unittest.TestCase):
+    def test_addition(self):
+        result = 1 + 1
+        self.assertEqual(result, 2)
+
+    def test_subtraction(self):
+        result = 5 - 3
+        self.assertEqual(result, 2)
+
+    def test_multiplication(self):
+        result = 2 * 4
+        self.assertEqual(result, 8)
+
+    def test_division(self):
+        result = 10 / 2
+        self.assertEqual(result, 5)
+
+if __name__ == "__main__":
+    unittest.main()
+    
 
