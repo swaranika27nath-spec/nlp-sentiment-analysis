@@ -141,3 +141,9 @@ if __name__ == "__main__":
     # When you run: python nlp_sentiment_analysis.py
     train_and_evaluate()
 
+from sklearn.datasets import fetch_20newsgroups
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
+
