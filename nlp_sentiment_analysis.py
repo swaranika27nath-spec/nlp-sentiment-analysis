@@ -79,3 +79,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    git init
+git remote add origin https://github.com/swaranika27nath-spec/NLP-statement-analysis
+git add .
+git commit -m "Initial NLP-statement-analysis"
+git push -u origin main
+
+
