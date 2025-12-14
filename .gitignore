@@ -1,0 +1,3 @@
+# Ignore saved models and joblib artifacts
+models/
+*.joblib
