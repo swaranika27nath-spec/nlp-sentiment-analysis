@@ -2,3 +2,5 @@ scikit-learn
 joblib
 notebook
 pytest
+numpy
+scipy
