@@ -23,7 +23,27 @@ pip install -r requirements.txt
 python3 nlp_sentiment_analysis.py
 ```
 
+Usage
+
+- Train and save a model (default path `models/model.joblib`):
+
+```bash
+python3 nlp_sentiment_analysis.py --mode train --model-path models/model.joblib
+```
+
+- Predict using a saved model:
+
+```bash
+python3 nlp_sentiment_analysis.py --mode predict --model-path models/model.joblib --sample-text "I love this car" "Policy is awful"
+```
+
+- Lightweight wrapper `predict.sh` (after `chmod +x predict.sh`):
+
+```bash
+./predict.sh models/model.joblib "I love this car" "Policy is awful"
+```
+
 Notes
 
-- The script downloads the 20 Newsgroups dataset on first run.
-- This is a toy example and not a real sentiment model.
+- If `models/model.joblib` is not present, run `--mode train` to produce it locally.
+
