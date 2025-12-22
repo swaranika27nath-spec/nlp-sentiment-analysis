@@ -1,4 +1,4 @@
-scikit-learn>=1.2
+scikit-learn>=1.2,<2.0
 joblib>=1.2
 notebook
 pytest>=7.0
